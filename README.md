@@ -1,12 +1,13 @@
 # Vue Project Template
 
-This template includes everything you need to get a jump start on your next Vue project.  
+This template includes everything you need to get a jump start on your next Vue project.
 
 This project features...
 
 - [Vue 3](https://vuejs.org)
-- [Pinia](https://vuejs.org/) (New default state management library over Vuex)
+- [Pinia](https://vuejs.org/)
 - [Vite](https://vitejs.dev/)
+- [Vue-router](https://router.vuejs.org/)
 - [Tailwind](https://tailwindcss.com/)
 
 ## Getting started
@@ -68,4 +69,4 @@ npm run format
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?
+- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?)

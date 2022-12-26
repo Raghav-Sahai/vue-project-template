@@ -1,17 +1,17 @@
-import App from "../src/App.vue";
+import Home from "../../src/components/Home.vue";
 import { mount } from "@vue/test-utils";
 import { describe, it, expect, beforeEach } from "vitest";
 
-describe("App.vue", () => {
+describe("Home.vue", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(App);
+    wrapper = mount(Home);
   });
 
   describe("When the component is rendered", () => {
     it("Then the header has the proper text", () => {
-      const header = wrapper.find("#header");
-      expect(header.text()).toBe("Vue Project Template");
+      const header = wrapper.find("#homePage");
+      expect(header.text()).toBe("Home Page");
     });
   });
 });
