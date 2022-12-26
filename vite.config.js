@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
   test: {
     coverage: {
-      reporter: ['text', 'json', 'html'],
+      reporter: ["text", "json", "html"],
     },
   },
 });
