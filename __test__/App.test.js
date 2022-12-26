@@ -1,8 +1,8 @@
 import App from "../src/App.vue";
 import { mount } from "@vue/test-utils";
 import { describe, it, expect, beforeEach } from "vitest";
-import { createTestingPinia } from '@pinia/testing'
-import { useCounterStore } from '../src/stores/counter'
+import { createTestingPinia } from "@pinia/testing";
+import { useCounterStore } from "../src/stores/counter";
 
 describe("App.vue", () => {
   let wrapper;
@@ -13,13 +13,17 @@ describe("App.vue", () => {
         plugins: [createTestingPinia()],
       },
     });
-    counter = useCounterStore()
+    counter = useCounterStore();
   });
 
   describe("When the component is rendered", () => {
     it("Then the header has the proper text", () => {
       const header = wrapper.find("#header");
       expect(header.text()).toBe("Vue Project Template");
+    });
+
+    it("Then the initial value of the counter is 1", () => {
+      expect(counter.count).toBe(1);
     });
   });
 });
